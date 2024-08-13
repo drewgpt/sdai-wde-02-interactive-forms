@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+       content="width=device-width, initial-scale=1.0">
+  <title>Basic Form with Media Types and Validations</title>
+</head>
+
+<body>
+  <h1>Apply Now</h1>
+
+  <form action="/submit"
+       method="post">
+
+    <label for="name">Full Name:</label>
+    <input type="text"
+         id="name"
+         name="name"
+         required
+         minlength="2"
+         placeholder="John Doe">
+
+    <br><br>
+
+    <label for="email">Email Address:</label>
+    <input type="email"
+         id="email"
+         name="email"
+         required
+         placeholder="example@mail.com">
+
+    <br><br>
+
+    <label for="age">Age (18-60):</label>
+    <input type="number"
+         id="age"
+         name="age"
+         required
+         min="18"
+         max="60">
+
+    <br><br>
+
+    <label for="resume">Upload Resume (PDF):</label>
+    <input type="file"
+         id="resume"
+         name="resume"
+         accept=".pdf"
+         required>
+
+    <br><br>
+
+    <label for="bio">Short Bio:</label>
+    <textarea id="bio"
+         name="bio"
+         rows="4"
+         maxlength="200"
+         placeholder="Tell us about yourself..."></textarea>
+
+    <br><br>
+
+    <button type="submit">Submit Application</button>
+  </form>
+</body>
+
+</html>

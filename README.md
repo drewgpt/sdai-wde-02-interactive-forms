@@ -9,6 +9,8 @@
 
 In this assignment, you will create a basic form that includes various media types and validations. This form allows users to submit their personal details such as name, email, age, resume, and a short bio. The form uses basic HTML5 features like input validation and file upload to ensure the data is entered correctly.
 
+Let's code this together as a class!
+
 ## Project Structure
 
 ```
@@ -177,12 +179,19 @@ Here is the complete code for the form, placed between the `<body>` tags:
 - **Accessibility:** Labels associated with form controls for better usability.
 - **Heading (H1):** Clearly defines the purpose of the form.
 
-## Testing
+
+## Testing Suggestions
 
 After completing the form, open the `index.html` file in a web browser to test the form's functionality.
 
 1. Try submitting the form without filling in some of the required fields, such as the name, email, or resume. Observe how the browser prevents the form from being submitted and highlights the missing fields.
-2. Ensure all validations work as expected, such as the correct format for email and the age constraints.
+2. Try entering an incorrectly formatted email address or an age outside of the specified range (18-60). Observe what happens and how the browser enforces these validations.
+3. Ensure all validations work as expected, such as the correct format for email and the age constraints.
+
+## Conclusion
+
+By completing this assignment, you should have gained an understanding of how to create a simple HTML form with various input types and built-in validation. This knowledge is fundamental for collecting user data in web applications.
+
 
 ## Conclusion
 
