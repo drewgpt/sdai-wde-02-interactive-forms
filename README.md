@@ -179,7 +179,10 @@ Here is the complete code for the form, placed between the `<body>` tags:
 
 ## Testing
 
-After completing the form, open the `index.html` file in a web browser to test the form's functionality. Ensure all validations work as expected, such as the correct format for email and age constraints.
+After completing the form, open the `index.html` file in a web browser to test the form's functionality.
+
+1. Try submitting the form without filling in some of the required fields, such as the name, email, or resume. Observe how the browser prevents the form from being submitted and highlights the missing fields.
+2. Ensure all validations work as expected, such as the correct format for email and the age constraints.
 
 ## Conclusion
 
