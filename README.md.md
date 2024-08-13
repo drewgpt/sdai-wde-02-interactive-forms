@@ -11,8 +11,10 @@ In this assignment, you will create a basic form that includes various media typ
 
 ## Project Structure
 
+```
 WDE2-Interactive-Forms/
 └── index.html
+```
 
 ## Setup
 
@@ -33,6 +35,7 @@ You are now ready to begin coding your basic form with media types and validatio
 
 Start with the basic HTML structure:
 
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -44,6 +47,7 @@ Start with the basic HTML structure:
   <!-- Form content goes here -->
 </body>
 </html>
+```
 
 ### Building Out the Basic Form
 
@@ -52,19 +56,25 @@ Next, you will build out the form within the `<body>` tag. This form will includ
 #### Step-by-Step Explanation of the Form Tags
 
 1. **Heading (H1)**:
+   ```html
    <h1>Apply Now</h1>
+   ```
    - The `<h1>` tag defines the main heading of the webpage.
    - This is the largest and most important heading tag, indicating the primary purpose of the page, which in this case is "Apply Now."
 
 2. **Form Tag**:
+   ```html
    <form action="/submit" method="post">
+   ```
    - The `<form>` element is used to collect user input. 
    - The `action` attribute defines where the form data should be sent when it is submitted.
    - The `method="post"` indicates that the form data should be sent to the server using the HTTP POST method.
 
 3. **Full Name Input**:
+   ```html
    <label for="name">Full Name:</label>
    <input type="text" id="name" name="name" required minlength="2" placeholder="John Doe">
+   ```
    - The `<label>` element provides a label for the input field, improving accessibility.
    - The `for="name"` attribute connects the label to the input field with the id `name`.
    - `<input type="text">` creates a single-line text input.
@@ -73,39 +83,50 @@ Next, you will build out the form within the `<body>` tag. This form will includ
    - `placeholder="John Doe"` provides a hint to the user of what to enter.
 
 4. **Email Address Input**:
+   ```html
    <label for="email">Email Address:</label>
    <input type="email" id="email" name="email" required placeholder="example@mail.com">
+   ```
    - `<input type="email">` creates an input field for email addresses, which validates the email format automatically.
    - `required` ensures this field is mandatory.
 
 5. **Age Input**:
+   ```html
    <label for="age">Age (18-60):</label>
    <input type="number" id="age" name="age" required min="18" max="60">
+   ```
    - `<input type="number">` creates a number input field.
    - The `min="18"` and `max="60"` attributes restrict the input to between 18 and 60.
 
 6. **Resume Upload**:
+   ```html
    <label for="resume">Upload Resume (PDF):</label>
    <input type="file" id="resume" name="resume" accept=".pdf" required>
+   ```
    - `<input type="file">` allows the user to upload files.
    - The `accept=".pdf"` attribute restricts the file type to PDFs.
    - `required` ensures that a file must be uploaded before submission.
 
 7. **Short Bio Textarea**:
+   ```html
    <label for="bio">Short Bio:</label>
    <textarea id="bio" name="bio" rows="4" maxlength="200" placeholder="Tell us about yourself..."></textarea>
+   ```
    - `<textarea>` creates a multi-line text input.
    - `rows="4"` sets the height of the textarea.
    - `maxlength="200"` restricts the input to a maximum of 200 characters.
 
 8. **Submit Button**:
+   ```html
    <button type="submit">Submit Application</button>
+   ```
    - `<button type="submit">` creates a button that submits the form when clicked.
 
 ### Full Form Code
 
 Here is the complete code for the form, placed between the `<body>` tags:
 
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -147,6 +168,7 @@ Here is the complete code for the form, placed between the `<body>` tags:
   </form>
 </body>
 </html>
+```
 
 ### Key Points Recap
 
