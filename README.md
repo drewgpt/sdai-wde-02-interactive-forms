@@ -12,25 +12,18 @@ In this assignment, you will create a basic form that includes various media typ
 ## Project Structure
 
 WDE2-Interactive-Forms/
-│
-├── assets/
-│   └── images/
-│       └── example.png
-│
 └── index.html
 
 ## Setup
 
 1. **Create the project folder**: 
    - Create a new folder on your local machine and name it `WDE2-Interactive-Forms`.
-   - Inside this folder, create a subfolder called `assets`, and within it, another subfolder called `images`.
 
 2. **Create the HTML file**:
    - Inside the `WDE2-Interactive-Forms` folder, create a new file named `index.html`.
 
 3. **Prepare for development**:
    - Open the `index.html` file in your preferred code editor.
-   - Ensure you have a web browser to test the form.
 
 ## Instructions
 
