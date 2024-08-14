@@ -189,3 +189,5 @@ After completing the form, open the `index.html` file in a web browser to test t
 ## Conclusion
 
 By completing this assignment, you should have gained an understanding of how to create a simple HTML form with various input types and built-in validation. This knowledge is fundamental for collecting user data in web applications.
+
+© All rights reserved to ThriveDX
