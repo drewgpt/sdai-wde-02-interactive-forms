@@ -55,6 +55,7 @@ Let's add a form header which typically includes a title that informs users of t
 
  ```html
 <h1>Apply Now</h1>
+
 ```
 
 **Explanation:**
@@ -82,7 +83,8 @@ We will now prompt the user to enter their full name using an input field.
  
    ```html
    <label for="name">Full Name:</label>
-   <input type="text" id="name" name="name" required minlength="2" placeholder="Your Full Name>
+   <input type="text" id="name" name="name" required minlength="2" placeholder="Your Full Name">
+   <br>
    ```
    **Explanation:**
    - The `<label>` element provides a label for the input field, improving accessibility. 
@@ -91,15 +93,17 @@ We will now prompt the user to enter their full name using an input field.
    - The `required` attribute ensures the field must be filled out before submission.
    - The `minlength="2"` attribute specifies that the input must have at least 2 characters.
    - `placeholder="Your Full Name"` provides a hint to the user of what to enter.
+   - `<br>` This is a line break tag used to insert a single line break.
 
 ## 4. Email Address Input Field
 We will now prompt the user to enter their email address and validate that a valid email address has been provided.
 
- - [ ] Add the following code after the `input` field for the user's name.
+ - [ ] Add the following code after the `<br>` tag from the user's name section.
 
    ```html
    <label for="email">Email Address:</label>
    <input type="email" id="email" name="email" required placeholder="example@mail.com">
+   <br>
    ```
 
 **Explanation:**
@@ -109,11 +113,12 @@ We will now prompt the user to enter their email address and validate that a val
 ## 5. Age Input Field
 Let's collect the user's age using an input field and set a minimum and maximum required number entry.
 
- - [ ] Add the following code after the input field for the user's email address.
+ - [ ] Add the following code after the `<br>` tag from the user's email section.
 
    ```html
    <label for="age">Age (18-60):</label>
    <input type="number" id="age" name="age" required min="18" max="60">
+   <br>
    ```
 
 **Explanation:**
@@ -123,11 +128,12 @@ Let's collect the user's age using an input field and set a minimum and maximum 
 ## 6. Resume Upload Option:
 Let's enable users to submit their resumes through our form and validate that it is a PDF file.
 
- - [ ] Add the following code after the age input field.
+ - [ ] Add the following code after the `<br>` tag from the age section.
 
    ```html
    <label for="resume">Upload Resume (PDF):</label>
    <input type="file" id="resume" name="resume" accept=".pdf" required>
+   <br>
    ```
 
    **Explanation:**
@@ -138,11 +144,12 @@ Let's enable users to submit their resumes through our form and validate that it
 ## 7. Short Bio Entry
 Let's give users the option to include a brief bio in our form.
 
- - [ ] Add the following code after the resume input field.
+ - [ ] Add the following code after the `<br>` tag from the resume section.
 
    ```html
    <label for="bio">Short Bio:</label>
    <textarea id="bio" name="bio" rows="4" maxlength="200" placeholder="Tell us about yourself..."></textarea>
+   <br>
    ```
 
     **Explanation:**
@@ -153,7 +160,7 @@ Let's give users the option to include a brief bio in our form.
 ## 8. Submit Button
 Here, we'll add a submit button to send the form's data.
 
- - [ ] Add the following code after the bio input field.
+ - [ ] Add the following code after the `<br>` tag from the user's bio section.
 
    ```html
    <button type="submit">Submit Application</button>
