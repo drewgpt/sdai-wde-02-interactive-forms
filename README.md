@@ -40,8 +40,6 @@ Now that you have your files set up, let's add the basic HTML5 boilerplate code.
 </head>
 <body>
 
-  <!-- Form content goes here -->
-
 </body>
 </html>
 ```
@@ -62,14 +60,14 @@ Let's add a form header which typically includes a title that informs users of t
 - The `<h1>` tag defines the main heading of the webpage or in this case a form.
 - This is the largest and most important heading tag, indicating the primary purpose of the page, which in this case is "Apply Now."
 
-## 4. Add our `form` section tags
-Now we need form section tags to wraps the form code, grouping all related elements.
+## 4. Add our Form section tags
+Now we need form section tags to wrap the form code, grouping all the related form code elements.
 
  - [ ] Inside the `<body></body>` tags after the `h1` add the following code.
 
    ```html
    <form>
-   
+   <!-- Form content goes here -->
    </form>
    ```
 
