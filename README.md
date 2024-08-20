@@ -84,7 +84,7 @@ We will now prompt the user to enter their full name using an input field.
    ```html
    <label for="name">Full Name:</label>
    <input type="text" id="name" name="name" required minlength="2" placeholder="Your Full Name">
-   <br>
+   <br><br>
    ```
    **Explanation:**
    - The `<label>` element provides a label for the input field, improving accessibility. 
@@ -103,7 +103,7 @@ We will now prompt the user to enter their email address and validate that a val
    ```html
    <label for="email">Email Address:</label>
    <input type="email" id="email" name="email" required placeholder="example@mail.com">
-   <br>
+   <br><br>
    ```
 
 **Explanation:**
@@ -118,7 +118,7 @@ Let's collect the user's age using an input field and set a minimum and maximum 
    ```html
    <label for="age">Age (18-60):</label>
    <input type="number" id="age" name="age" required min="18" max="60">
-   <br>
+   <br><br>
    ```
 
 **Explanation:**
@@ -133,7 +133,7 @@ Let's enable users to submit their resumes through our form and validate that it
    ```html
    <label for="resume">Upload Resume (PDF):</label>
    <input type="file" id="resume" name="resume" accept=".pdf" required>
-   <br>
+   <br><br>
    ```
 
    **Explanation:**
@@ -149,7 +149,7 @@ Let's give users the option to include a brief bio in our form.
    ```html
    <label for="bio">Short Bio:</label>
    <textarea id="bio" name="bio" rows="4" maxlength="200" placeholder="Tell us about yourself..."></textarea>
-   <br>
+   <br><br>
    ```
 
     **Explanation:**
