@@ -179,7 +179,7 @@ After completing the form, open the `index.html` file in a web browser to test t
 2. Try entering an incorrectly formatted email address or an age outside of the specified range (18-60). Observe what happens and how the browser enforces these validations.
 3. Ensure all validations work as expected, such as the correct format for email and the age constraints.
 
-## Conclusion
+# Conclusion 📄
 
 By completing this assignment, you should have gained an understanding of how to create a simple HTML form with various input types and built-in validation. This knowledge is fundamental for collecting user data in web applications.
 
