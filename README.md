@@ -1,41 +1,34 @@
 
-# WDE2 Interactive Forms
-
-### Basic Form with Media Types and Validations
-
+# Interactive Forms
 ![Screenshot of the finished webpage](./assets/images/example.png)
+Basic Form with Media Types and Validations
+##
 
-## Description
-
-In this assignment, you will create a basic form that includes various media types and validations. This form allows users to submit their personal details such as name, email, age, resume, and a short bio. The form uses basic HTML5 features like input validation and file upload to ensure the data is entered correctly.
+## Description 📄
+In this assignment, we will work together to create a basic form that includes various media types and validations. This form allows users to submit their personal details such as name, email, age, resume, and a short bio. The form uses basic HTML5 features like input validation and file upload to ensure the data is entered correctly.
 
 Let's code this together as a class!
 
 ## Project Structure
 
 ```
-WDE2-Interactive-Forms/
+Interactive-Forms/
 └── index.html
 ```
 
-## Setup
+# Instructions ✅
 
-1. **Create the project folder**: 
-   - Create a new folder on your local machine and name it `WDE2-Interactive-Forms`.
-
-2. **Create the HTML file**:
-   - Inside the `WDE2-Interactive-Forms` folder, create a new file named `index.html`.
-
-3. **Prepare for development**:
-   - Open the `index.html` file in your preferred code editor.
-
-## Instructions
-
+## 1. **Create the Project Folder and Files**
+   - [ ] Create a folder named `InteractiveForms` to store all your project files.
+   
+   - [ ] Inside the `InteractiveForms` folder, create a file named `index.html`. 
+   
 You are now ready to begin coding your basic form with media types and validations!
 
-### HTML Coding
+## 2. **Start with a HTML boilerplate**
+Now that you have your files set up, let's add the basic HTML5 boilerplate code.
 
-Start with the basic HTML structure:
+  - [ ] Open your empty `index.html` file and add the following code to it.
 
 ```html
 <!DOCTYPE html>
@@ -46,137 +39,130 @@ Start with the basic HTML structure:
   <title>Basic Form with Media Types and Validations</title>
 </head>
 <body>
+
   <!-- Form content goes here -->
+
 </body>
 </html>
 ```
 
-### Building Out the Basic Form
+Next, you will build out the form `html` code which will include a header and various input fields, each with specific validations.
 
-Next, you will build out the form within the `<body>` tag. This form will include various input fields, each with specific validations.
+## 3. Let's add a Header to our form
+Let's add a form header which typically includes a title that informs users of the form's purpose.
 
-#### Step-by-Step Explanation of the Form Tags
+ - [ ] Inside the `<body></body>` tags of your `index.html` file add the following code.
 
-1. **Heading (H1)**:
+ ```html
+<h1>Apply Now</h1>
+```
+
+**Explanation:**
+- The `<h1>` tag defines the main heading of the webpage or in this case a form.
+- This is the largest and most important heading tag, indicating the primary purpose of the page, which in this case is "Apply Now."
+
+## 4. Add our `form` section tags
+Now we need form section tags to wraps the form code, grouping all related elements.
+
+ - [ ] Inside the `<body></body>` tags after the `h1` add the following code.
+
    ```html
-   <h1>Apply Now</h1>
+   <form>
+   
+   </form>
    ```
-   - The `<h1>` tag defines the main heading of the webpage.
-   - This is the largest and most important heading tag, indicating the primary purpose of the page, which in this case is "Apply Now."
 
-2. **Form Tag**:
-   ```html
-   <form></form>
-   ```
-   - The `<form>` element is used to collect user input.
+**Explanation:**
+- The <form> tag in HTML is used to create a form for collecting user input.
 
-3. **Full Name Input**:
+## 3. Full Name Input Field:
+We will now prompt the user to enter their full name using an input field.
+
+ - [ ] Inside the `<form></form>` tags add the following code.
+ 
    ```html
    <label for="name">Full Name:</label>
-   <input type="text" id="name" name="name" required minlength="2" placeholder="John Doe">
+   <input type="text" id="name" name="name" required minlength="2" placeholder="Your Full Name>
    ```
-   - The `<label>` element provides a label for the input field, improving accessibility. The `<label>` and `<input>` elements should be placed inside the previous `<form>` tags
+   **Explanation:**
+   - The `<label>` element provides a label for the input field, improving accessibility. 
    - The `for="name"` attribute connects the label to the input field with the id `name`.
    - `<input type="text">` creates a single-line text input.
    - The `required` attribute ensures the field must be filled out before submission.
    - The `minlength="2"` attribute specifies that the input must have at least 2 characters.
-   - `placeholder="John Doe"` provides a hint to the user of what to enter.
+   - `placeholder="Your Full Name"` provides a hint to the user of what to enter.
 
-4. **Email Address Input**:
+## 4. Email Address Input Field
+We will now prompt the user to enter their email address and validate that a valid email address has been provided.
+
+ - [ ] Add the following code after the `input` field for the user's name.
+
    ```html
    <label for="email">Email Address:</label>
    <input type="email" id="email" name="email" required placeholder="example@mail.com">
    ```
-   - `<input type="email">` creates an input field for email addresses, which validates the email format automatically.
-   - `required` ensures this field is mandatory.
 
-5. **Age Input**:
+**Explanation:**
+- `<input type="email">` creates an input field for email addresses, which validates the email format automatically.
+- `required` ensures this field is mandatory.
+
+## 5. Age Input Field
+Let's collect the user's age using an input field and set a minimum and maximum required number entry.
+
+ - [ ] Add the following code after the input field for the user's email address.
+
    ```html
    <label for="age">Age (18-60):</label>
    <input type="number" id="age" name="age" required min="18" max="60">
    ```
-   - `<input type="number">` creates a number input field.
-   - The `min="18"` and `max="60"` attributes restrict the input to between 18 and 60.
 
-6. **Resume Upload**:
+**Explanation:**
+- `<input type="number">` creates a number input field.
+- The `min="18"` and `max="60"` attributes restrict the input to between 18 and 60.
+
+## 6. Resume Upload Option:
+Let's enable users to submit their resumes through our form and validate that it is a PDF file.
+
+ - [ ] Add the following code after the age input field.
+
    ```html
    <label for="resume">Upload Resume (PDF):</label>
    <input type="file" id="resume" name="resume" accept=".pdf" required>
    ```
+
+   **Explanation:**
    - `<input type="file">` allows the user to upload files.
    - The `accept=".pdf"` attribute restricts the file type to PDFs.
    - `required` ensures that a file must be uploaded before submission.
 
-7. **Short Bio Textarea**:
+## 7. Short Bio Entry
+Let's give users the option to include a brief bio in our form.
+
+ - [ ] Add the following code after the resume input field.
+
    ```html
    <label for="bio">Short Bio:</label>
    <textarea id="bio" name="bio" rows="4" maxlength="200" placeholder="Tell us about yourself..."></textarea>
    ```
+
+    **Explanation:**
    - `<textarea>` creates a multi-line text input.
    - `rows="4"` sets the height of the textarea.
    - `maxlength="200"` restricts the input to a maximum of 200 characters.
 
-8. **Submit Button**:
+## 8. Submit Button
+Here, we'll add a submit button to send the form's data.
+
+ - [ ] Add the following code after the bio input field.
+
    ```html
    <button type="submit">Submit Application</button>
    ```
+
+   **Explanation:**
    - `<button type="submit">` creates a button that submits the form when clicked.
 
-### Full Form Code
-
-Here is the complete code for the form, placed between the `<body>` tags:
-
-```html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Basic Form with Media Types and Validations</title>
-</head>
-<body>
-  <h1>Apply Now</h1>
-
-  <form action="/submit" method="post">
-
-    <label for="name">Full Name:</label>
-    <input type="text" id="name" name="name" required minlength="2" placeholder="John Doe">
-
-    <br><br>
-
-    <label for="email">Email Address:</label>
-    <input type="email" id="email" name="email" required placeholder="example@mail.com">
-
-    <br><br>
-
-    <label for="age">Age (18-60):</label>
-    <input type="number" id="age" name="age" required min="18" max="60">
-
-    <br><br>
-
-    <label for="resume">Upload Resume (PDF):</label>
-    <input type="file" id="resume" name="resume" accept=".pdf" required>
-
-    <br><br>
-
-    <label for="bio">Short Bio:</label>
-    <textarea id="bio" name="bio" rows="4" maxlength="200" placeholder="Tell us about yourself..."></textarea>
-
-    <br><br>
-
-    <button type="submit">Submit Application</button>
-  </form>
-</body>
-</html>
-```
-
-### Key Points Recap
-
-- **Form Structure:** Organized and easy to understand.
-- **Input Fields:** Validated for accuracy and proper data entry.
-- **Accessibility:** Labels associated with form controls for better usability.
-- **Heading (H1):** Clearly defines the purpose of the form.
-
+##
 
 ## Testing Suggestions
 
@@ -190,6 +176,6 @@ After completing the form, open the `index.html` file in a web browser to test t
 
 By completing this assignment, you should have gained an understanding of how to create a simple HTML form with various input types and built-in validation. This knowledge is fundamental for collecting user data in web applications.
 
-##
+---
 
 © All rights reserved to ThriveDX
