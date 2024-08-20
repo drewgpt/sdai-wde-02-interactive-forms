@@ -61,7 +61,7 @@ Let's add a form header which typically includes a title that informs users of t
 - This is the largest and most important heading tag, indicating the primary purpose of the page, which in this case is "Apply Now."
 
 ## 4. Add our Form section tags
-Now we need form section tags to wrap the form code, grouping all the related form code elements.
+Now, we need to use form section tags to wrap the form code, effectively grouping all the related form elements together
 
  - [ ] Inside the `<body></body>` tags after the `h1` add the following code.
 
