@@ -1,7 +1,7 @@
 
 # Interactive Forms
-![Screenshot of the finished webpage](./assets/images/example.png)
-Basic Form with Media Types and Validations
+![The screenshot displays a simple HTML form titled "Apply Now" with no CSS applied. The form includes labeled input fields for a full name, email address, age, resume upload, and a short bio. Each field is presented in a basic, linear format with input types corresponding to text, email, number, file, and textarea. The form also includes validation requirements, such as minimum name length, email format, age range, and PDF-only resume uploads. The form ends with a "Submit Application" button, all elements are unstyled, appearing in their default HTML layout.](./assets/images/example.png)
+
 ##
 
 ## Description 📄
@@ -16,7 +16,7 @@ Interactive-Forms/
 └── index.html
 ```
 
-# Instructions ✅
+## Instructions ✅
 
 ## 1. **Create the Project Folder and Files**
    - [ ] Create a folder named `InteractiveForms` to store all your project files.
@@ -180,6 +180,15 @@ After completing the form, open the `index.html` file in a web browser to test t
 # Conclusion 📄
 
 By completing this assignment, you should have gained an understanding of how to create a simple HTML form with various input types and built-in validation. This knowledge is fundamental for collecting user data in web applications.
+
+##
+
+### Solution codebase 👀
+🛑 **Only use this as a reference** 🛑
+
+💾 **Not something to copy and paste** 💾
+
+**Note:**  This lab references a solution file located [here](https://github.com/HackerUSA-CE/sdai-wde-02-interactive-forms/blob/solution/index.html) (link not shown).
 
 ---
 
