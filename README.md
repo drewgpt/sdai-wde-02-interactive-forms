@@ -1,6 +1,6 @@
 
 # Interactive Forms
-![The screenshot displays a simple HTML form titled "Apply Now" with no CSS applied. The form includes labeled input fields for a full name, email address, age, resume upload, and a short bio. Each field is presented in a basic, linear format with input types corresponding to text, email, number, file, and textarea. The form also includes validation requirements, such as minimum name length, email format, age range, and PDF-only resume uploads. The form ends with a "Submit Application" button, all elements are unstyled, appearing in their default HTML layout.](./assets/images/example.png)
+![The screenshot shows an unstyled HTML form titled "Apply Now" with input fields for name, email, age, resume, and bio, along with validation rules. It ends with a "Submit Application" button.](./assets/images/example.png)
 
 ##
 
