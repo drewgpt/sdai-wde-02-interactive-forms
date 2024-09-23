@@ -7,8 +7,6 @@
 ## Description 📄
 In this assignment, we will work together to create a basic form that includes various media types and validations. This form allows users to submit their personal details such as name, email, age, resume, and a short bio. The form uses basic HTML5 features like input validation and file upload to ensure the data is entered correctly.
 
-Let's code this together as a class!
-
 ## Project Structure
 
 ```
